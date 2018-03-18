@@ -1,0 +1,316 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block title %}
+    <title></title>
+    {% endblock %}
+    <!-- css file -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+</head>
+<body>
+	<div class="preloader"></div>
+	    <!-- Main Header Start -->
+	    <header class="irs-main-header">
+	        <div class="irs-header-top-bar">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-2 col-sm-4">
+	                        <div class="irs-header-top-col irs-center-2">
+	                            <p><i class="fa fa-phone" aria-hidden="true"></i> +021 - 123 1012 1211</p>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-2 col-sm-4">
+	                        <div class="irs-header-top-col irs-center-2">
+	                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> 10:00 AM - 4:00 PM</p>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-3 col-md-offset-5 col-sm-4">
+	                        <div class="irs-header-top-col text-right irs-center-2">
+	                            <div class="irs-social text-right irs-center-2">
+	                                <a href="index-layout1.html#"><i class="icofont icofont-social-facebook"></i></a>
+	                                <a href="index-layout1.html#"><i class="icofont icofont-social-twitter"></i></a>
+	                                <a href="index-layout1.html#"><i class="icofont icofont-social-vimeo"></i></a>
+	                                <a href="index-layout1.html#"><i class="icofont icofont-brand-linkedin"></i></a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="irs-header-nav scrollingto-fixed">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-10 col-sm-12">
+	                        <nav class="navbar navbar-default irs-navbar">
+	                            <div class="container-fluid">
+	                                <!-- Brand and toggle get grouped for better mobile display -->
+	                                <div class="navbar-header">
+	                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	                                        <span class="sr-only">Toggle navigation</span>
+	                                        <span class="icon-bar"></span>
+	                                        <span class="icon-bar"></span>
+	                                        <span class="icon-bar"></span>
+	                                    </button>
+	                                    <a class="navbar-brand" href="index.html">
+	                                        <img src="{% static 'images/logo.png' %}" alt="">
+	                                    </a>
+	                                </div>
+	                                <!-- Collect the nav links, forms, and other content for toggling -->
+	                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                                    <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="flipInY">
+	                                        <li>
+	                                            <a href="index.html">Home</a>
+	                                        </li>
+	                                        <!--<li><a href="about.html">About</a>
+	                                        </li>-->
+	                                        <li class="dropdown">
+	                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <i class="fa fa-angle-down"></i></a>
+	                                            <ul class="dropdown-menu">
+	                                                <li><a href="courses-grid.html" style="font-size: 13px;">Courses Grid</a>
+	                                                </li>
+	                                                <li><a href="courses-left-sidebar.html" style="font-size: 13px;">Courses left sidebar</a>
+	                                                </li>
+	                                                <li><a href="course-single.html" style="font-size: 13px;">course single</a>
+	                                                </li>
+	                                            </ul>
+	                                        </li>
+	                                        <li class="dropdown">
+	                                            <a href="index-layout1.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study in India<i class="fa fa-angle-down"></i></a>
+	                                            <ul class="dropdown-menu">
+	                                                <li><a href="teacher.html" style="font-size: 13px;">Why study in India</a>
+	                                                </li>
+	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Educational Opportunities</a>
+	                                                </li>
+	                                                <li><a href="work-after-grad.html" style="font-size: 13px;">Work Opportunities</a>
+	                                                </li>
+	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Planning Your Study</a>
+	                                                </li>
+	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Study Permits</a>
+	                                                </li>
+	                                            </ul>
+	                                        </li>
+	                                        <li class="dropdown">
+	                                            <a href="index-layout1.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore India <i class="fa fa-angle-down"></i></a>
+	                                            <ul class="dropdown-menu">
+	                                                <li><a href="blog-grid.html" style="font-size: 13px;">Indian Culture and Heritage</a>
+	                                                </li>
+	                                                <li><a href="blog-single.html" style="font-size: 13px;">Student Life</a>
+	                                                </li>
+	                                            </ul>
+	                                        </li>
+	                                        <li><a href="faq.html">faq</a>
+	                                        </li>
+	                                        <li><a href="contact.html">Contact</a>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                                <!-- /.navbar-collapse -->
+	                            </div>
+	                            <!-- /.container-fluid -->
+	                        </nav>
+	                    </div>
+	                    <div class="col-md-2 col-sm-12">
+	                        <div class="irs-log-reg">
+	                            <a href="/account/login">Login</a>
+                                <a href="/account/signup">Register</a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+	    <!-- Main Header end -->
+	 <!-- script start from here -->
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-dropdownhover.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-scrolltofixed-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/stellar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.masonry.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/css3-animate-it.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-slider.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.scrollUp.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+
+    <!-- Custom script for all pages -->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+    <!-- Funfact START -->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('.start-count').each(function() {
+                var $this = $(this);
+                $this.data('target', parseInt($this.html()));
+                $this.data('counted', false);
+                $this.html('0');
+            });
+
+            $(window).bind('scroll', function() {
+                var speed = 3000;
+                $('.start-count').each(function() {
+                    var $this = $(this);
+                    if (!$this.data('counted') && $(window).scrollTop() + $(window).height() >= $this.offset().top) {
+                        $this.data('counted', true);
+                        $this.animate({
+                            dummy: 1
+                        }, {
+                            duration: speed,
+                            step: function(now) {
+                                var $this = $(this);
+                                var val = Math.round($this.data('target') * now);
+                                $this.html(val);
+                                if (0 < $this.parent('.value').length) {
+                                    $this.parent('.value').css('width', val + '%');
+                                }
+                            }
+                        });
+                    }
+                });
+            }).triggerHandler('scroll');
+        });
+    </script>
+    {% block body %}
+	{% endblock %}
+	<!-- Footer start -->
+    <footer class="irs-footer-field">
+        <div class="container">
+            <div class="row animatedParent animateOnce animateOnce">
+                <div class="col-md-3">
+                    <div class="irs-footer-about">
+                        <img class="irs-foooter-logo" src="{% static 'images/footer-logo.png' %}" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtin eiusmodtin didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="irs-social">
+                            <a href="index-layout1.html#"><i class="icofont icofont-social-facebook"></i></a>
+                            <a href="index-layout1.html#"><i class="icofont icofont-social-twitter"></i></a>
+                            <a href="index-layout1.html#"><i class="icofont icofont-social-vimeo"></i></a>
+                            <a href="index-layout1.html#"><i class="icofont icofont-brand-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="irs-footer-link">
+                        <h4 class="irs-footer-heading">Useful Links</h4>
+                        <ul>
+                            <li><a href="index-layout1.html#">Home</a>
+                            </li>
+                            <li><a href="index-layout1.html#">About Us</a>
+                            </li>
+                            <li><a href="index-layout1.html#">Courses</a>
+                            </li>
+                            <li><a href="index-layout1.html#">Teachers</a>
+                            </li>
+                            <li><a href="index-layout1.html#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="irs-footer-tweets">
+                        <h4 class="irs-footer-heading">RECENT TWEETS</h4>
+                        <div class="irs-tweets">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <p><a href="index-layout1.html#">@UNIVERSITY</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtin.</p>
+                            <a href="index-layout1.html#">about 5 min ago</a>
+                        </div>
+                        <div class="irs-tweets">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <p><a href="index-layout1.html#">@UNIVERSITY</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtin.</p>
+                            <a href="index-layout1.html#">about 5 min ago</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="irs-footer-contact">
+                        <h4 class="irs-footer-heading">Contact Us</h4>
+                        <img src="images/footer.jpg" alt="">
+                        <div class="irs-mailbox">
+                            <p><i class="zmdi zmdi-email"></i> Mail: yourmail@gmail.com </p>
+                            <p><i class="zmdi zmdi-gps-dot"></i> 678 Zoomtowr, Main road, Canada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <section class="irs-copyright-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="irs-copyright">
+                        <p>Copyright© 2017. Design by <a href="#">irs_soft</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- script start from here -->
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-dropdownhover.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-scrolltofixed-min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/isotope.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/stellar.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.masonry.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/css3-animate-it.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap-slider.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.scrollUp.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+
+    <!-- Custom script for all pages -->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+    <!-- Funfact START -->
+    <script type="text/javascript">
+        $(document).ready(function($) {
+            $('.start-count').each(function() {
+                var $this = $(this);
+                $this.data('target', parseInt($this.html()));
+                $this.data('counted', false);
+                $this.html('0');
+            });
+
+            $(window).bind('scroll', function() {
+                var speed = 3000;
+                $('.start-count').each(function() {
+                    var $this = $(this);
+                    if (!$this.data('counted') && $(window).scrollTop() + $(window).height() >= $this.offset().top) {
+                        $this.data('counted', true);
+                        $this.animate({
+                            dummy: 1
+                        }, {
+                            duration: speed,
+                            step: function(now) {
+                                var $this = $(this);
+                                var val = Math.round($this.data('target') * now);
+                                $this.html(val);
+                                if (0 < $this.parent('.value').length) {
+                                    $this.parent('.value').css('width', val + '%');
+                                }
+                            }
+                        });
+                    }
+                });
+            }).triggerHandler('scroll');
+        });
+    </script>
+</body>
+</html>
+
