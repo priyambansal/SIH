@@ -664,7 +664,7 @@ h6 {
 
 /* ========== About css Start ========== */
 .irs-about-field {
-    padding: 100px 0 50px;
+    padding: 50px 0 0px;
 }
 .irs-about-field .irs-section-title {
     margin-bottom: 75px;
@@ -1565,30 +1565,22 @@ h6 {
 
 /* ========== Discription css Start ========== */
 .irs-discription-field {
-    padding: 100px 0 70px;
-    background: #F6F6F6;
+    padding: 50px 0 50px;
+    background: #F8F8F8;
 }
 .irs-discription-col {
     margin-bottom: 30px;
 }
 .irs-discription-col h1 {
-    font-size: 48px;
+    font-size: 40px;
     margin-bottom: 30px;
-}
-.irs-discription-col h1 span {
-    color: #F4A460;
+    font-family: sans-serif;
 }
 .irs-topdiscription {
     margin-bottom: 20px;
 }
-.irs-discription-col ul li {
-    position: relative;
-    margin-bottom: 10px;
-}
-.irs-discription-col ul li i {
-    color: #C1C1C1;
-    margin-right: 10px;
-}
+
+
 
 
 /* ========== Mission css Start ========== */ 
@@ -1825,10 +1817,15 @@ h6 {
 .irs-inner-page-heading {
     padding: 120px 0;
     text-align: center;
-    background: url(../images/bg/3.jpg);
+    
     background-size: cover;
     background-position: center;
+    
+}
+.imageb{
+    background-image: url("../images/india1.jpg");
     background-repeat: no-repeat;
+    opacity: 1
 }
 .irs-inner-heading {
     display: inline-block;
@@ -2001,6 +1998,7 @@ h6 {
     border-radius: 0;
     margin-bottom: 30px;
 }
+
 
 
 
