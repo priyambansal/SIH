@@ -583,15 +583,15 @@ h6 {
     background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-   background-image: url(../images/slider/1.jpg);
+   background-image: url(../images/slider/culture.jpg);
    position: relative; 
 }
 .fade-carousel .slides .slide-2 {
-   background-image: url(../images/slider/2.jpg);
+   background-image: url(../images/slider/eduopp.jpg);
    position: relative; 
 }
 .fade-carousel .slides .slide-3 {
-   background-image: url(../images/slider/3.jpg);
+   background-image: url(../images/slider/plan.jpg);
    position: relative; 
 }
 .fade-carousel .slides .slide-1:before, .fade-carousel .slides .slide-2:before,
@@ -640,7 +640,7 @@ h6 {
 
 /* ========== Welcome css Start ========== */
 .irs-welcome-field {
-    padding: 100px 0;
+    padding: 70px 0;
     background: #F7F7F7;
     position: relative;
 }
@@ -784,7 +784,7 @@ h6 {
 
 /* ========== Courses css Start ========== */
 .irs-courses-field {
-    padding: 100px 0 70px;
+    padding: 65px 0 65px;
 }
 .irs-courses-col {
     text-align: center;
@@ -1218,7 +1218,8 @@ h6 {
 
 /* ========== Teachers css Start ========== */
 .irs-teachers-field {
-    padding: 100px 0 70px;
+    padding: 70px 0 70px;
+    background: #F7F7F7;
 }
 .irs-teachers-col {
     margin-bottom: 30px;
@@ -1237,14 +1238,14 @@ h6 {
     width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
-    padding: 15px 25px;
+    padding: 5px 10px;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.irs-teachers-col:hover .irs-teachers-name {
+/*.irs-teachers-col:hover .irs-teachers-name {
     width: 90%;
     left: 50%;
     margin-left: -45%;
@@ -1253,58 +1254,20 @@ h6 {
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-}
-.irs-teachers-col .irs-teachers-name h4 a {
+}*/
+.irs-teachers-col .irs-teachers-name h4 {
     font-family: 'Oxygen', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #ffffff;
-    margin-bottom: 5px;
+    color: #F4A460;
+    margin-bottom: 10px;
 }
 .irs-teachers-col .irs-teachers-name p {
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     text-transform: capitalize;
 }
-.irs-teachers-social {
-    position: absolute;
-    top: -40px;
-    right: 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 5px 10px;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.irs-teachers-col:hover .irs-teachers-social {
-    top: 0;
-    right: 0;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.irs-teachers-social a i {
-    color: #ffffff;
-    margin-right: 10px;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.irs-teachers-social a i:hover {
-    color: #F4A460;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
+
 
 /* pagination start */
 .irs-pagination {
@@ -1337,7 +1300,7 @@ h6 {
     transition: all 0.4s ease-in-out;
 }
 /***** Teacher single css start *****/
-.irs-teacher-single-field {
+.single-field {
     padding: 100px 0 70px;
 }
 .irs-teacher-single-col {
@@ -1508,7 +1471,7 @@ h6 {
 .irs-blog-field .irs-info-text ul li p a {
     color: #ffffff;
 }
-.irs-blog-col .irs-courses-content h4 a {
+.irs-blog-col .irs-courses-content h4{
     font-size: 18px;
 }
 /***** Blog single css start *****/
@@ -1713,7 +1676,7 @@ h6 {
 
 /* ========== Faq css start ========== */
 .irs-faq-field {
-    padding: 100px 0;
+    padding: 100fipx 0;
 }
 .irs-faq-field .irs-teachers-col {
     margin-bottom: 50px;
