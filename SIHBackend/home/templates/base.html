@@ -6,14 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'http://irsfoundation.com/tf/templates/EducationPark/images/apple-icon.png' %}" rel="icon" type="image/png">
+    <link href="{% static 'images/favicon.png' %}" rel="shortcut icon" type="image/png">
     {% block title %}
-    <title></title>
+    <title>EduIndia</title>
     {% endblock %}
     <!-- css file -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/study.css' %}">
 </head>
 <body>
 	<div class="preloader"></div>
@@ -67,48 +70,46 @@
 	                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	                                    <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="flipInY">
 	                                        <li>
-	                                            <a href="index.html">Home</a>
+	                                            <a href="/home">Home</a>
 	                                        </li>
-	                                        <!--<li><a href="about.html">About</a>
-	                                        </li>-->
 	                                        <li class="dropdown">
 	                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses <i class="fa fa-angle-down"></i></a>
 	                                            <ul class="dropdown-menu">
-	                                                <li><a href="courses-grid.html" style="font-size: 13px;">Courses Grid</a>
+	                                                <li><a href="#" style="font-size: 13px;">Courses Grid</a>
 	                                                </li>
-	                                                <li><a href="courses-left-sidebar.html" style="font-size: 13px;">Courses left sidebar</a>
+	                                                <li><a href="#" style="font-size: 13px;">Courses left sidebar</a>
 	                                                </li>
-	                                                <li><a href="course-single.html" style="font-size: 13px;">course single</a>
-	                                                </li>
-	                                            </ul>
-	                                        </li>
-	                                        <li class="dropdown">
-	                                            <a href="index-layout1.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study in India<i class="fa fa-angle-down"></i></a>
-	                                            <ul class="dropdown-menu">
-	                                                <li><a href="teacher.html" style="font-size: 13px;">Why study in India</a>
-	                                                </li>
-	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Educational Opportunities</a>
-	                                                </li>
-	                                                <li><a href="work-after-grad.html" style="font-size: 13px;">Work Opportunities</a>
-	                                                </li>
-	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Planning Your Study</a>
-	                                                </li>
-	                                                <li><a href="teacher-single.html" style="font-size: 13px;">Study Permits</a>
+	                                                <li><a href="#" style="font-size: 13px;">course single</a>
 	                                                </li>
 	                                            </ul>
 	                                        </li>
 	                                        <li class="dropdown">
-	                                            <a href="index-layout1.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore India <i class="fa fa-angle-down"></i></a>
+	                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study in India<i class="fa fa-angle-down"></i></a>
 	                                            <ul class="dropdown-menu">
-	                                                <li><a href="blog-grid.html" style="font-size: 13px;">Indian Culture and Heritage</a>
+	                                                <li><a href="/StudyInIndia/WhyStudyInIndia" style="font-size: 13px;">Why study in India</a>
 	                                                </li>
-	                                                <li><a href="blog-single.html" style="font-size: 13px;">Student Life</a>
+	                                                <li><a href="#" style="font-size: 13px;">Educational Opportunities</a>
+	                                                </li>
+	                                                <li><a href="/StudyInIndia/WorkOpp" style="font-size: 13px;">Work Opportunities</a>
+	                                                </li>
+	                                                <li><a href="#" style="font-size: 13px;">Planning Your Study</a>
+	                                                </li>
+	                                                <li><a href="/StudyInIndia/StudyPermits" style="font-size: 13px;">Study Permits</a>
 	                                                </li>
 	                                            </ul>
 	                                        </li>
-	                                        <li><a href="faq.html">faq</a>
+	                                        <li class="dropdown">
+	                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore India <i class="fa fa-angle-down"></i></a>
+	                                            <ul class="dropdown-menu">
+	                                                <li><a href="#" style="font-size: 13px;">Indian Culture and Heritage</a>
+	                                                </li>
+	                                                <li><a href="#" style="font-size: 13px;">Student Life</a>
+	                                                </li>
+	                                            </ul>
 	                                        </li>
-	                                        <li><a href="contact.html">Contact</a>
+	                                        <li><a href="#">faq</a>
+	                                        </li>
+	                                        <li><a href="#">Contact</a>
 	                                        </li>
 	                                    </ul>
 	                                </div>
