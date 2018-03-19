@@ -425,8 +425,11 @@ h6 {
     color: #ffffff;
     padding: 5px 15px;
     margin-top: 30px;
+    width: 500px;
 }
 .irs-log-reg a {
+    /*width: 300px;*/
+    margin: 50px;
     color: #ffffff;
 }
 
