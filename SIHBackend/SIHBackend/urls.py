@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/',include('home.urls')),
     url(r'^account/',include('accounts.urls')),
+    url(r'^StudyInIndia/',include('StudyInIndia.urls')),
 ]
