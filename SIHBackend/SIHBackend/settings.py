@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 	'home',
     'accounts',
     'StudyInIndia',
+    'courses',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
