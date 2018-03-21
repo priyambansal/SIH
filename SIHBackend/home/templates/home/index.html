@@ -1,8 +1,182 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
     <title>EduIndia|Home</title>
 {% endblock %}
 {% block body %}
-    <p>This is home page</p>
+    <!-- main slider start -->
+    <section class="irs-main-slider">
+        <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#bs-carousel" data-slide-to="1"></li>
+                <li data-target="#bs-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item slides active">
+                    <div class="slide-1"></div>
+                    <div class="hero">                 
+                        <a href="#" class="btn btn-default irs-big-btn" role="button"><h2 style="color: white;"><strong>Why study in India</strong></h2></a>
+                    </div>
+                </div>
+                <div class="item slides">
+                    <div class="slide-2"></div>
+                    <div class="hero">                        
+                        <a href="#" class="btn btn-default irs-big-btn" role="button"><h2 style="color: white;"><strong>Educational Opportunities</strong></h2></a>
+                    </div>
+                </div>
+                <div class="item slides">
+                    <div class="slide-3"></div>
+                    <div class="hero">            
+                        <a href="index-layout1.html#" class="btn btn-default irs-big-btn" role="button"><h2 style="color: white;"><strong>Plan Your Study</strong></h2></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main slider end -->
+
+    <!-- Welcome start -->
+    <section class="irs-welcome-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <h1>Welcome To <span>Education in India</span></h1>                    
+                    <p>India, being the land of diverse cultures, a birthplace of some of the world’s greatest religions and history offers a wide range of options for international students. The thought of studying in at one of the most exciting countries can seem challenging at first but often opens up new perspective and experience of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome end -->  
+
+    <!-- highlights start -->
+    <section class="irs-courses-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="irs-section-title">
+                        <h2><span>Highlights</span></h2>
+                        <div class="irs-title-line">                           
+                        </div>
+                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam est dolorem quaerat harum sequi, nesciunt consequatur magni voluptatem similique </p>-->
+                    </div>
+                </div>
+            </div>
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-4 col-sm-6">
+                    <div class="irs-courses-col animated fadeInLeftShort slow delay-250">
+                        <img src="{% static 'images/highlights/1.jpg' %}" alt="">      
+                        <!--<div class="irs-courses-img">
+                            <img src="images/courses/1.jpg" alt="">                            
+                        </div>-->
+                        <div class="irs-courses-content">
+                            <h4><strong>Education in India</strong></h4>
+                            <p>The Indian education system is currently mainly comprised of primary education, secondary education, senior secondary education and higher education.
+                             Depending on what you study, attaining your undergraduate degree in India can take three to five years. Postgraduate courses are generally two to three years long. After completing a postgraduate degree, there is the option of continuing on with doctoral studies and research at various educational institutes.</p>
+                            <!--<a class="btn btn-default irs-btn-transparent-two" href="course-single.html" role="button">read more</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="irs-courses-col animated fadeInUpShort slow delay-500">
+                    	<img src="{% static 'images/highlights/2.jpg' %}" alt="">   
+                        <!--<div class="irs-courses-img">
+                            <img src="images/courses/2.jpg" alt="">                            
+                        </div>-->
+                        <div class="irs-courses-content">
+                            <h4><strong>History of India</strong></h4>
+                            <p>India is a land of ancient civilization. India's social, economic, and cultural configurations are the products of a long process of regional expansion. Indian history begins with the birth of the Indus Valley Civilization and the coming of the Aryans. These two phases are usually described as the pre-Vedic and Vedic age. The history of India is one punctuated by constant integration with migrating peoples and with the diverse cultures that surround India.</p>
+                            <!--<a class="btn btn-default irs-btn-transparent-two" href="course-single.html" role="button">read more</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="irs-courses-col animated fadeInRightShort slow delay-250">
+                        <img src="{% static 'images/highlights/3.jpg' %}" alt="">   
+                        <!--<div class="irs-courses-img">
+                            <img src="images/courses/3.jpg" alt="">                            
+                        </div>-->
+                        <div class="irs-courses-content">
+                            <h4><strong>Lifestyle in India</strong></h4>
+                            <p>India is the birthplace of Hinduism, Buddhism, Jainism, Sikhism, and other religions.India is one of the most religiously and ethnically diverse nations in the world, with some of the most deeply religious societies and cultures. Virtually all regions of India have their distinctive places of pilgrimage, local saints and folk heroes, religious festivals, and associated fairs. Some of the widely celebrated festivals in India are Holi, Diwali, Eid and Christmas.</p>
+                            <!--<a class="btn btn-default irs-btn-transparent-two" href="course-single.html" role="button">read more</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- highlights end -->
+
+    
+    <!-- Achievement start -->
+    <section class="irs-teachers-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="irs-section-title">
+                        <h2><span>Achievement</span> Board</h2>
+                        <div class="irs-title-line">
+                            <!--<div class="irs-title-icon">
+                                <i class="icofont icofont-education"></i>
+                            </div>-->
+                        </div>
+                        <p>People educated in India head big global companies, which serve well to its employees as well as its customers. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row animatedParent animateOnce">
+                <div class="col-md-3 col-sm-6">
+                    <div class="irs-teachers-col animated fadeInUpShort slow delay-250">
+                        <img src="{% static 'images/ceo/sundarp.jpg' %}" alt="">                        
+                        <div class="irs-teachers-name">
+                            <h4>Sundar Pichai</h4>
+                            <p style="color: #8c8173; font-size: 14px;">Chief Executive Officer of Google</p>
+                            <p>Graduated from IIT Kharagpur</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="irs-teachers-col animated fadeInUpShort slow delay-500">
+                        <img src="{% static 'images/ceo/banga.jpg' %}" alt="">
+                        
+                        <div class="irs-teachers-name">
+                            <h4>Ajaypal Singh Banga</h4>
+                            <p style="color: #8c8173; font-size: 14px;">Chief Executive Officer of MasterCard</p>
+                            <p>Graduated from University of Delhi, IIM Ahemdabad</p>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="irs-teachers-col animated fadeInUpShort slow delay-750">
+                        <img src="{% static 'images/ceo/indra.jpg' %}" alt="">                        
+                        <div class="irs-teachers-name">
+                            <h4>Indra Nooyi</h4>
+                            <p style="color: #8c8173; font-size: 14px;">Chief Executive Officer of PepsiCo</p>
+                            <p>Graduated from IIM Calcutta</p>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="irs-teachers-col animated fadeInUpShort slow delay-1000">
+                        <img src="{% static 'images/ceo/suri.jpg' %}" alt="">                        
+                        <div class="irs-teachers-name">
+                            <h4>Rajeev Suri</h4>
+                            <p style="color: #8c8173; font-size: 14px;">Chief Executive Officer of Nokia</p>
+                            <p>Graduated from Mangalore University</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Achievement  end -->  
+
 {% endblock %}
 
