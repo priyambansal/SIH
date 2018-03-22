@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block title %}
     <title>EduIndia|Undergraduate</title>
 {% endblock %}
@@ -13,7 +13,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="irs-courses-col animated fadeInLeftShort slow delay-250">
                         <div class="irs-courses-img">
-                            <img src="images/courses/technology.jpg" alt="">
+                            <img src="{% static 'images/courses/technology.jpg' %}" alt="">
                             
                             <div class="irs-courses-img-text">
                                 <ul class="clearfix">
@@ -32,10 +32,10 @@
                         </div>
                     </div>
                 </div>
-                <!--div class="col-md-4 col-sm-6">
+                <div class="col-md-4 col-sm-6">
                     <div class="irs-courses-col animated fadeInUpShort slow delay-500">
                         <div class="irs-courses-img">
-                            <img src="images/courses/science.jpg" alt="">
+                            <img src="{% static 'images/courses/science.jpg' %}" alt="">
                            
                             <div class="irs-courses-img-text">
                                 <ul class="clearfix">
@@ -225,6 +225,6 @@
         </div>
         
     </section>
--->
+
     <!-- courses end -->
     {% endblock %}
