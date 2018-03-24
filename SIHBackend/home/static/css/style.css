@@ -420,13 +420,17 @@ h6 {
     transition: all 0.3s ease-in-out;
 }
 .irs-log-reg {
+    
     background: #F4A460;
     text-align: center;
     color: #ffffff;
     padding: 5px 15px;
-    margin-top: 30px;
+    margin-top:50px;
+    width: 100px;
 }
 .irs-log-reg a {
+
+    margin-right: 800px;
     color: #ffffff;
 }
 
