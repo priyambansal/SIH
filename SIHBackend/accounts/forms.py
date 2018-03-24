@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from .models import CommonRegistration
 
 class SignupForm(UserCreationForm):
 	email = forms.EmailField(required=True)
@@ -25,3 +26,24 @@ class SignupForm(UserCreationForm):
 			user.save()
 
 		return user
+
+class CommonForm(forms.ModelForm):
+	def __init__(self, *args, **kwargs ):
+         self.user = kwargs.pop('user',None)
+         super(CommonForm, self).__init__(*args, **kwargs)
+
+	class Meta:
+		model=CommonRegistration
+		exclude=['user']
+    
+  #   def save(self, commit=True):
+		# form = super(CommonForm, self).save(commit=False)
+		# user.first_name=self.cleaned_data['first_name']
+		# user.last_name=self.cleaned_data['last_name']
+		# user.email=self.cleaned_data['email']
+		
+		# if commit:
+		# 	user.save()
+
+		# return user
+
