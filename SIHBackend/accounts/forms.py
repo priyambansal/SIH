@@ -28,22 +28,41 @@ class SignupForm(UserCreationForm):
 		return user
 
 class CommonForm(forms.ModelForm):
-	def __init__(self, *args, **kwargs ):
-         self.user = kwargs.pop('user',None)
-         super(CommonForm, self).__init__(*args, **kwargs)
-
+	
 	class Meta:
 		model=CommonRegistration
-		exclude=['user']
+		fields=('User_name','User_email','Contact',
+				'DateOfBirth',
+	            'Address',
+				'Gender',
+	            'Passport_number',
+	            'Religion',
+	            'Nationality',
+	            'School',
+	            'University',
+	            'Marks_highschool',
+	            'Marks_inter',
+	            'Marks_university',)
     
-  #   def save(self, commit=True):
-		# form = super(CommonForm, self).save(commit=False)
-		# user.first_name=self.cleaned_data['first_name']
-		# user.last_name=self.cleaned_data['last_name']
-		# user.email=self.cleaned_data['email']
+
+def save(self, commit=True):
+		form = super(CommonForm,self).save(commit=False)
+		form.User_name=self.cleaned_data['User_name']
+		form.User_email=self.cleaned_data['User_email']
+		form.Contact=self.cleaned_data['Contact']
+		form.DateOfBirth=self.cleaned_data['DateOfBirth']
+		form.Address=self.cleaned_data['Address']
+		form.Gender=self.cleaned_data['Gender']
+		form.Passport=self.cleaned_data['Passport']
+		form.Religion=self.cleaned_data['Religion']
+		form.Nationality=self.cleaned_data['Nationality']
+		form.School=self.cleaned_data['School']
+		form.University=self.cleaned_data['University']
+		form.Marks_highschool=self.cleaned_data['Marks_highschool']
+		form.Marks_inter=self.cleaned_data['Marks_inter']
+		form.Marks_university=self.cleaned_data['Marks_university']
 		
-		# if commit:
-		# 	user.save()
+		if commit:
+			user.save()
 
-		# return user
-
+		return user

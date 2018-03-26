@@ -10,19 +10,12 @@
                 <div class="col-md-12">
                     <div class="irs-account-col">
                         <h3>Register</h3>
-                        <form method="post">
+                        <form id="contact_form" method="post">
 						    {% csrf_token %}				   
-						    <div class="form-group">
-						    <!-- {{ field.label_tag }} -->
-						    <br>
- 						    {{ form.as_p }}
-						       <!--  {% if field.help_text %}
-						          <small class="form-text text-muted">
-						            {{ field.help_text }}
-						          </small>
-						        {% endif %} -->
-						    </div>
-						    <!--  -->
+						    <!-- <div class="form-group"> -->
+ 						    {{ form.as_ul}}
+						    
+                            </div>
 							<br>
                             <button class="btn btn-default irs-big-btn" type="submit">Submit</button>
                         </form>
