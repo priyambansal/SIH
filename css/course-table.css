@@ -1,0 +1,19 @@
+.course-table table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.course-table td, .course-table th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #dddddd;
+ }
+ .course-table>h2{
+ 	color: coral;
+ }
