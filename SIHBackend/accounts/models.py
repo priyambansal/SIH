@@ -24,4 +24,28 @@ class CommonRegistration(models.Model):
 	Marks_inter=models.IntegerField()
 	Marks_university=models.IntegerField()
 		
+
+
+class ExamJee(models.Model):
+	Name=models.CharField(max_length=30,default="")
+	School_12=models.CharField(verbose_name="10th School",max_length=30)
+	Marks_10=models.IntegerField(verbose_name="10th Percentage")
+	Marks_12=models.IntegerField(verbose_name="12th Percentage")
+	School_address=models.CharField(verbose_name="School address",max_length=200)
+	School_board=models.CharField(verbose_name="School board",max_length=200)
+	Profile_pic=models.ImageField(verbose_name="Upload photograph",upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
+
+class ExamGate(models.Model):
+	Name=models.CharField(max_length=30,default="")
+	School_12=models.CharField(verbose_name="10th School",max_length=30)
+	Marks_10=models.IntegerField(verbose_name="10th Percentage")
+	Marks_12=models.IntegerField(verbose_name="12th Percentage")
+	School_address=models.CharField(verbose_name="School address",max_length=200)
+	School_board=models.CharField(verbose_name="School board",max_length=200)
+	University=models.CharField(max_length=100)
+	Marks_university=models.IntegerField(verbose_name="University percentage")
+	Profile_pic=models.ImageField(verbose_name="Upload photograph",upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
+
+
+
 # Create your models here.

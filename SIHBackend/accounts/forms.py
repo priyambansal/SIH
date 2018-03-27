@@ -2,6 +2,7 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import CommonRegistration
+from .models import ExamJee,ExamGate
 
 class SignupForm(UserCreationForm):
 	email = forms.EmailField(required=True)
@@ -66,3 +67,57 @@ def save(self, commit=True):
 			user.save()
 
 		return user
+
+class JeeForm(forms.ModelForm):
+	
+	class Meta:
+		model=ExamJee
+		fields=('Name',
+	            'School_12',
+	            'Marks_10',
+	            'Marks_12',
+	            'School_address',
+	            'School_board',
+	            'Profile_pic')
+		def save(self, commit=True):
+			form.Name=self.cleaned_data['Name']
+			form.School_12=self.cleaned_data['School_12']
+			form.Marks_10=self.cleaned_data['Marks_10']
+			form.Marks_12=self.cleaned_data['Marks_12']
+			form.School_address=self.cleaned_data['School_address']
+			form.School_board=self.cleaned_data['School_board']
+			form.Profile_pic=self.cleaned_data['Profile_pic']
+
+			if commit:
+				jee.save()
+
+			return jee
+    
+class GateForm(forms.ModelForm):
+	
+	class Meta:
+		model=ExamGate
+		fields=('Name',
+	            'School_12',
+	            'Marks_10',
+	            'Marks_12',
+	            'School_address',
+	            'School_board','University',
+	            'Marks_university',
+	            'Profile_pic')
+		def save(self, commit=True):
+			form.Name=self.cleaned_data['Name']
+			form.School_12=self.cleaned_data['School_12']
+			form.Marks_10=self.cleaned_data['Marks_10']
+			form.Marks_12=self.cleaned_data['Marks_12']
+			form.School_address=self.cleaned_data['School_address']
+			form.School_board=self.cleaned_data['School_board']
+			form.University=self.cleaned_data['University']
+			form.Marks_university=self.cleaned_data['Marks_university']
+			form.Profile_pic=self.cleaned_data['Profile_pic']
+
+			if commit:
+				gate.save()
+
+			return gate
+    

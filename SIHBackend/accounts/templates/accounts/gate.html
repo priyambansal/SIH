@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>EduIndia|Gate</title>
+{% endblock %}
+{% block body %}
+<section class="irs-account-field">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="irs-account-col">
+                        <div class ="demo-lft-tab-5 {% if active_tab == 'demo-lft-tab-5' %} active{% endif %}">
+                        <h3>Application Form</h3>
+                        <form id="contact_form" name="contact_form" method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <br>
+                            <button class="btn btn-default irs-big-btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- Account end -->
+{% endblock %}
