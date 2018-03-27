@@ -124,4 +124,4 @@ USE_TZ = True
 STATIC_ROOT = '/SIHBackend/home/static/'
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/account/'
+LOGIN_REDIRECT_URL = '/account/register'

@@ -6,12 +6,13 @@ from accounts.forms import CommonForm
 def home(request):
 	return render(request, 'accounts/profile.html')
 
+
 def signup(request):
 	if request.method == 'POST':
 		form = SignupForm(request.POST)
 		if form.is_valid():
 			form.save()
-			return redirect('/account')
+			return redirect('accounts/login.html')
 	else:
 		form = SignupForm()
 
