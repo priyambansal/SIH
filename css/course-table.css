@@ -5,15 +5,23 @@
 }
 
 .course-table td, .course-table th {
-    border: 2px solid #dddddd;
+    border: 2px solid #d3d3d3;
     text-align: left;
     padding: 8px;
     width: 
 }
 
 .course-table tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #dcdcdc;
  }
  .course-table>h2{
  	color: coral;
+ }
+ .course-table td a{
+ 	text-decoration: underline;
+/* 	color: black;
+*/ }
+ .course-table td a:hover{
+
+ 	color: blue;
  }
