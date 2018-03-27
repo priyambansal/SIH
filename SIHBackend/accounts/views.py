@@ -21,9 +21,10 @@ def register(request):
 	if request.method == 'POST':
 	    form = CommonForm(request.POST)
 	    if form.is_valid():
-	    	form_f=form.save(commit=False)
-	    	form_f.save()
+	    	form.save()
+	    	return redirect('/account')
 	else:
 		form = CommonForm()
 
-		return render(request, 'accounts/commonForm.html',{'form':form})
+	
+	return render(request, 'accounts/commonForm.html',{'form':form})
