@@ -3,15 +3,13 @@ from accounts.forms import SignupForm
 from accounts.forms import CommonForm
 
 # Create your views here.
-def home(request):
-	return render(request, 'accounts/profile.html')
 
 def signup(request):
 	if request.method == 'POST':
 		form = SignupForm(request.POST)
 		if form.is_valid():
 			form.save()
-			return redirect('/account')
+			return redirect('/account/register')
 	else:
 		form = SignupForm()
 
