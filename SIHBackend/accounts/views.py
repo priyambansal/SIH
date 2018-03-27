@@ -26,4 +26,5 @@ def register(request):
 	else:
 		form = CommonForm()
 
+	
 	return render(request, 'accounts/commonForm.html',{'form':form})

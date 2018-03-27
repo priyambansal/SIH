@@ -23,6 +23,5 @@ class CommonRegistration(models.Model):
 	Marks_highschool=models.IntegerField()
 	Marks_inter=models.IntegerField()
 	Marks_university=models.IntegerField()
-    
-    	
+		
 # Create your models here.
