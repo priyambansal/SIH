@@ -22,7 +22,7 @@ def register(request):
 	    form = CommonForm(request.POST)
 	    if form.is_valid():
 	    	form.save()
-	    	return redirect('/account/exam/jee')
+	    	return redirect('/account/exam/gate')
 	else:
 		form = CommonForm()
 
@@ -48,4 +48,4 @@ def gate(request):
       else:
      	  form=GateForm()
 
-      return render(request,'accounts/gate.html',{'form':form},{'active_tab':'demo-lft-tab-5'})
+      return render(request,'accounts/gate.html',{'form':form})
