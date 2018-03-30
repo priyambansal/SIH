@@ -56,7 +56,7 @@ body {font-family: Arial;}
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Jee')">Jee</button>
-  <button class="tablinks" onclick="openCity(event, 'Gate')"><a href="{% url 'gate' %}">Gate</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Gate')"><a href="{% url 'gate'%}">Gate</a></button>
   <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
 </div>
 
@@ -86,6 +86,7 @@ body {font-family: Arial;}
             <div class="row">
                 <div class="col-md-12">
                     <div class="irs-account-col">
+                        <div class ="demo-lft-tab-5 {% if active_tab == 'demo-lft-tab-5' %} active{% endif %}">
                         <h3>Application Form</h3>
                         <form id="contact_form" name="contact_form" method="post">
                             {% csrf_token %}
@@ -99,8 +100,8 @@ body {font-family: Arial;}
             </div>
         </div>
     </section>
-</div> -->
-
+</div>
+ -->
 <!-- <div id="Tokyo" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>

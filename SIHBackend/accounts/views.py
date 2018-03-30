@@ -22,7 +22,7 @@ def register(request):
 	    form = CommonForm(request.POST)
 	    if form.is_valid():
 	    	form.save()
-	    	return redirect('/account/exam/gate')
+	    	return redirect('/account/exam/jee')
 	else:
 		form = CommonForm()
 

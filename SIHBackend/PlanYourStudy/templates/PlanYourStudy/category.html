@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <form method="get">
+    {{ filter.form.as_p }}
+    <button type="submit">Search</button>
+  </form>
+  <ul>
+  {% for category in filter.qs %}
+    <li>{{ category.Field }} -{{ category.Degree }}-{{ category.Location }}-{{ category.College }}-{{category.Exam}}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}
