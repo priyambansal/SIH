@@ -12,6 +12,6 @@ class Category(models.Model):
 		('Government','Government'),
 		('Private','Private'),)
 	InstituteType=models.CharField(max_length=100,choices=CHOICES,default="Government")
-	Check = models.BooleanField(default=True)
+	Check = models.BooleanField(default=False)
     
 # Create your models here.
