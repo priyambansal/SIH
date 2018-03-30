@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'StudyInIndia',
     'courses',
     'PlanYourStudy',
-    # 'widget_tweaks',
+    'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

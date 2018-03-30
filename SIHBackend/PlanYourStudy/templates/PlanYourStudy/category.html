@@ -1,13 +1,73 @@
 {% extends 'base.html' %}
 
+{% load widget_tweaks %}
+
 {% block body %}
   <form method="get">
-    {{ filter.form.as_p }}
-    <button type="submit">Search</button>
+    <div class="well">
+      <h4 style="margin-top: 0">SEARCH</h4>
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.Field.label_tag }}
+          {% render_field filter.form.Field class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.Degree.label_tag }}
+          {% render_field filter.form.Degree class="form-control" %}
+        </div>
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.Address.label_tag }}
+          {% render_field filter.form.Address class="form-control" %}
+        </div>
+        <!-- 
+          <div>
+            {% for choice in filter.form.groups %}
+              <label class="checkbox-inline">
+                {{ choice.tag }} {{ choice.choice_label }}
+              </label>
+            {% endfor %}
+          </div>
+         -->
+     </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color:#F4A460;border-color:#F4A460;">
+        <span class="glyphicon glyphicon-search" ></span> Search
+      </button>
+    </div>
   </form>
-  <ul>
-  {% for category in filter.qs %}
-    <li>{{ category.Field }} -{{ category.Degree }}-{{ category.Location }}-{{ category.College }}-{{category.Exam}}</li>
-  {% endfor %}
-  </ul>
+<br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Degree</th>
+        <th>Address</th>
+        <th>College</th>
+        <th>Exam</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in filter.qs %}
+        <tr>
+          <td>{{ category.Field }}</td>
+          <td>{{ category.Degree }}</td>
+          <td>{{ category.Address }}</td>
+          <td>{{ category.College }}</td>
+          <td>{{ category.ollege }}</td>
+          
+          <!-- <td>
+            {% for group in user.groups.all %}
+              {{ group }}
+            {% empty %}
+              <em class="text-muted">No group</em>
+            {% endfor %}
+          </td>
+        </tr> -->
+      {% empty %}
+        <tr>
+          <td colspan="5">No data</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 {% endblock %}
