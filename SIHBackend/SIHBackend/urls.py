@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^StudyInIndia/',include('StudyInIndia.urls')),
     url(r'^courses/', include('courses.urls')),
     url(r'^PlanYourStudy/', include('PlanYourStudy.urls')),
-      
+   
 ]

@@ -420,17 +420,14 @@ h6 {
     transition: all 0.3s ease-in-out;
 }
 .irs-log-reg {
-    
     background: #F4A460;
     text-align: center;
     color: #ffffff;
     padding: 5px 15px;
-    margin-top:50px;
-    width: 100px;
+    margin-top: 30px;
+
 }
 .irs-log-reg a {
-
-    margin-right: 800px;
     color: #ffffff;
 }
 
@@ -788,7 +785,7 @@ h6 {
 
 /* ========== Courses css Start ========== */
 .irs-courses-field {
-    padding: 100px 0 70px;
+    padding: 50px 0 70px;
 }
 .irs-courses-col {
     text-align: center;
@@ -927,12 +924,12 @@ h6 {
     border-bottom: 1px solid #cccccc;
     padding: 10px 10px 10px 10px;
 }
-.irs-course-features ul li:last-child {
+/*.irs-course-features ul li:last-child {
     font-size: 20px;
     font-weight: bold;
     color: #F4A460;
     border-bottom: none;
-}
+}*/
 .irs-course-features ul li span i {
     color: #F4A460;
 }

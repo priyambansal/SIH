@@ -6,6 +6,10 @@ def WhyStudyInIndia(request):
 
 def StudyPermits(request):
 	return render(request, 'StudyInIndia/study_permits.html')
+	
+def Scholarship(request):
+	return render(request, 'StudyInIndia/scholarship.html')
 
 def WorkOpp(request):
 	return render(request, 'StudyInIndia/work_opp.html')
+

@@ -16,9 +16,10 @@
           {% render_field filter.form.Degree class="form-control" %}
         </div>
         <div class="form-group col-sm-4 col-md-3">
-          {{ filter.form.Address.label_tag }}
-          {% render_field filter.form.Address class="form-control" %}
+          {{ filter.form.Area.label_tag }}
+          {% render_field filter.form.Area class="form-control" %}
         </div>
+        
         <!-- 
           <div>
             {% for choice in filter.form.groups %}
@@ -39,23 +40,25 @@
   <table class="table table-bordered" style="text-align:center; ">
     <thead>
       <tr>
+        <th>College</th>
         <th>Field</th>
         <th>Degree</th>
-        <th>Address</th>
-        <th>College</th>
+        <th>Area</th>
         <th>Exam</th>
-        <th>Interested</th>
+        <th>Fees</th>
       </tr>
     </thead>
     <tbody>
       {% for category in filter.qs %}
         <tr>
+          <td>{{ category.College }}</td>
           <td>{{ category.Field }}</td>
           <td>{{ category.Degree }}</td>
-          <td>{{ category.Address }}</td>
-          <td>{{ category.College }}</td>
+          <td>{{ category.Area }}</td>
           <td>{{ category.Exam }}</td>
-          <td><input type="checkbox" />    &nbsp;   </td>
+          <td>{{ category.Fees }}</td>
+          
+          <!-- <td><input type="checkbox" />    &nbsp;   </td> -->
           <!-- <td>
             {% for group in user.groups.all %}
               {{ group }}

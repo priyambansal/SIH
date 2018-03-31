@@ -129,7 +129,6 @@ h6 {
     text-transform: uppercase;
 }
 /* ========== TITLE LINE ========== */
-
 .irs-section-title {
     margin-bottom: 60px;
     text-align: center;
@@ -924,12 +923,12 @@ h6 {
     border-bottom: 1px solid #cccccc;
     padding: 10px 10px 10px 10px;
 }
-.irs-course-features ul li:last-child {
+/*.irs-course-features ul li:last-child {
     font-size: 20px;
     font-weight: bold;
     color: #F4A460;
     border-bottom: none;
-}
+}*/
 .irs-course-features ul li span i {
     color: #F4A460;
 }
